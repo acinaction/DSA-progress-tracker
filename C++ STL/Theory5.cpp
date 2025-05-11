@@ -40,4 +40,29 @@ int main(){
     // If map has pair with key string then for declaration the complexity is m.size()*log(n);
     // This is because when we want to initialize we first compare with existing elements;
     
+
+    // Unordered Maps
+    // Differences
+    // 1. Inbuilt implementation
+    // 2. Time complexity
+    // 3. Valid keys datatype
+
+    unordered_map <int, string> m;
+    m[1] = "abc"; // O(1);
+    m[5] = "cde";
+    m[3] = "acd";
+    m.insert({4,"afg"});
+    m.insert(make_pair(2,"abd"));
+    // They use hash tables.
+    // This makes complexity of both insertion and accessing O(1);
+    auto it = m.find(7); // O(1)
+    m.erase(it); // O(1)
+
+    // Coming to the third point of difference.. that explains that some data-types can't be used in unordered maps;
+    // Those data types whose hash func is not defined cannot be used in unordered maps;
+    // hash func is defined for basic data-types like int double float etc and string but not for pairs vectors etc;
+
+    // Multi-maps
+    // They are different from maps bcz they insert pairs with same keys twice.. ie they do not update value, rather they create a new pair. 
+    
 }
