@@ -20,4 +20,22 @@ int main(){
 
     reverse(v.begin(),v.end());// CRAzyyyyy inbuilt function
 
+
+    //more algorithms
+
+    // Lambda functions-
+    // [](int x){return x+2;}
+    // cout << [](int x){return x+2;}(2); << endl;
+    // [](int x, int y){return x+y;}
+    // auto sum = [](int x, int y){return x+y;};
+    // now sum can be used as a function like sum(1,2);
+
+    // vector<int> v = {2,3,5};
+    // cout << all_of(v.begin,v.end(),[](int x){return x>0;}) // checks whether all elements are >0;
+
+    // cout << any_of(v.begin(),v.end(),[](int x){return x%5==0;}) // checks whether any element is divisible by 5;
+
+    // cout << none_of(v.begin(),v.end(),[](int x){return x<0}) // returns true iff all dont match;
+
+    // We can also pass it like we did in case of comparator function
 }
