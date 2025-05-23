@@ -29,6 +29,3 @@ Feel free to suggest improvements or corrections!
 - C++
 - GitHub
 - LeetCode, GeeksforGeeks, HackerRank (for problem sources)
-
-## Progress Tracker
-- 
